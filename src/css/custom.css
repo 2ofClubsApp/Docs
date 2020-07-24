@@ -30,12 +30,9 @@
 .hero__subtitle {
   color: white;
 }
-
-
-.button {
-  background: #0b88a1;
+.button--outline {
+  color:white;
 }
-
 .button:hover {
   background: white;
   color:  #0b88a1;
