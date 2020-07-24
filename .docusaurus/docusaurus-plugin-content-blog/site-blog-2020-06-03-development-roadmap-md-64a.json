@@ -1,0 +1,23 @@
+{
+  "permalink": "/blog/2020/06/03/development-roadmap",
+  "source": "@site/blog\\2020-06-03-development-roadmap.md",
+  "description": "Hi there! The 2ofClubs Team is working hard to develop a tinder like platform where you can find the perfect club!",
+  "date": "2020-06-03T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "roadmap",
+      "permalink": "/blog/tags/roadmap"
+    },
+    {
+      "label": "backend",
+      "permalink": "/blog/tags/backend"
+    }
+  ],
+  "title": "Development Roadmap",
+  "readingTime": 1.06,
+  "truncated": true,
+  "prevItem": {
+    "title": "Progress Report 1",
+    "permalink": "/blog/2020/06/10/pr1"
+  }
+}

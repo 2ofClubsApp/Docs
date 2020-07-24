@@ -1,0 +1,19 @@
+{
+  "permalink": "/blog/2020/07/08/",
+  "source": "@site/blog\\2020-07-08.md",
+  "description": "The following is our progress report from June 8th to July 23rd",
+  "date": "2020-07-08T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "backend",
+      "permalink": "/blog/tags/backend"
+    }
+  ],
+  "title": "Progress Report",
+  "readingTime": 0.085,
+  "truncated": true,
+  "nextItem": {
+    "title": "Progress Report",
+    "permalink": "/blog/2020/06/16/progress-report"
+  }
+}
