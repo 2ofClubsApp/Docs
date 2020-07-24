@@ -30,10 +30,11 @@
 .hero__subtitle {
   color: white;
 }
-.button--outline {
-  color:white;
-}
+
 .button:hover {
   background: white;
   color:  #0b88a1;
+}
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  color: white;
 }

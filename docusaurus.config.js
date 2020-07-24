@@ -7,6 +7,14 @@ module.exports = {
   organizationName: '2-of-clubs', // Usually your GitHub org/user name.
   projectName: '2ofClubs/docs', // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: 'beta_test', // Any value that will identify this message.
+      content:
+          'We\'ll soon be releasing our application and will be looking for testers!',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+    },
+    defaultDarkMode: true,
     navbar: {
       title: '2ofClubs',
       logo: {
