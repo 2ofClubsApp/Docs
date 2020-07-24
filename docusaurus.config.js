@@ -8,6 +8,7 @@ module.exports = {
   projectName: '2ofClubs/docs', // Usually your repo name.
   themeConfig: {
     disableDarkMode: true,
+    defaultDarkMode: true,
     navbar: {
       title: '2ofClubs',
       logo: {
