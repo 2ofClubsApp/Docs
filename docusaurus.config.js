@@ -7,6 +7,7 @@ module.exports = {
   organizationName: '2-of-clubs', // Usually your GitHub org/user name.
   projectName: '2ofClubs/docs', // Usually your repo name.
   themeConfig: {
+    disableDarkMode: true,
     navbar: {
       title: '2ofClubs',
       logo: {
