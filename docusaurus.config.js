@@ -69,13 +69,17 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'welcome',
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
+
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
