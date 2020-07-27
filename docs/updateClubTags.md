@@ -7,18 +7,17 @@ sidebar_label: Update Tags
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
-<Endpoint>POST /clubs/{"{clubName}"}/tags </Endpoint>: Updating a club's tags
+<Endpoint>POST /clubs/{"{clubID}"}/tags </Endpoint>: Updating a club's tags
 
-```
+```json
 {
-    "Tags": []String
+    "Tags": []int
 }
 ```
 
-### Request
+### Example Request
 This is a **protected route**, a **valid JWT is required** in the header field
 
 #### Header
@@ -27,10 +26,11 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyNzUsImlhdCI6IjIw
 ```
 
 #### Body
-All previous tags will be replaced with the new updated list of tags
+All previous tags will be replaced with the new updated list of tags <br></br>
+**Note**: Tag IDs are available through [GET /tags](get_tags)
 ```json
 {
-    "Tags": ["Physics", "Chemistry"]
+    "Tags": [1, 2, 3, 4]
 }
 ```
 **Note**: Repeated tags will only count once

@@ -7,12 +7,11 @@ sidebar_label: Toggle
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
-<Endpoint>POST /tags/{"{tagName}"}/toggle </Endpoint>: Toggling a tag on/off
+<Endpoint>POST /tags/{"{tagID}"}/toggle </Endpoint>: Toggling a tag on/off
 
-### Request
+### Example Request
 This is an **admin protected route**, a **valid admin JWT is required** in the header field
 #### Header
 ```

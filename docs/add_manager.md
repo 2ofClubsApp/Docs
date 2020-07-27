@@ -7,13 +7,12 @@ sidebar_label: Add Manager
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
-<Endpoint>POST /clubs/{"{clubName}"}/manages/{"{userName}"} </Endpoint>: Adding a club manager
+<Endpoint>POST /clubs/{"{clubID}"}/manages/{"{userName}"} </Endpoint>: Adding a club manager
 
 
-### Request
+### Example Request
 This is a **protected route**, a **valid JWT is required** in the header field
 
 #### Header

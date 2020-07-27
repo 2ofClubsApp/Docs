@@ -7,24 +7,23 @@ sidebar_label: Upload
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
 <Endpoint>POST /upload/tags </Endpoint>: Uploading a file containing multiple tags <br></br>
 
-```
+```json
 file: {FileName}.txt
 ```
 **Note**: Repeated tags won't be created again
 
-### Request
+### Example Request
 This is an **admin protected route**, a **valid admin JWT is required** in the header field
 #### Header
 ```
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4Mjg1MDQsImlhdCI6IjIwMjAtMDctMjdUMDE6MzY6NDQuNDYwMTkyOS0wNDowMCIsInN1YiI6ImFkbWluIn0.jfC8lgQEcEQxUaG0mNibzeX5BD1uUQ7wQdM0LhxHrBQ
 ```
 #### Body
-```
+```json
 file: {FileName}.txt
 ```
 #### File Format: 

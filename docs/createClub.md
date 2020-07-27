@@ -7,12 +7,11 @@ sidebar_label: Create
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
 <Endpoint>POST /clubs </Endpoint>: Creating a club owned by the given user provided by the JWT
 
-```
+```json
 {
     "Name": string,
     "Email": string,
@@ -21,7 +20,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 }
 ```
 
-### Request
+### Example Request
 This is a **protected route**, a **valid JWT is required** in the header field
 #### Header
 ```

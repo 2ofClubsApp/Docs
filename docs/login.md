@@ -7,19 +7,18 @@ sidebar_label: Login
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
 <Endpoint>POST /login</Endpoint>: Login to the app provided the correct user credentials
 
-```
+```json
 {
     "username": string,
     "password": string,
 }
 ```
 
-### Request
+### Example Request
 #### Body
 ```json
 {

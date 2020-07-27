@@ -7,10 +7,9 @@ sidebar_label: Get
 export const Endpoint = ({children, color}) => ( <span style={{
       borderRadius: '2px',
       color: '#E83E8C',
-      padding: '0.2rem',
     }}>{children}</span> );
 
-<Endpoint>GET /clubs/{"{clubName}"} </Endpoint>: Getting a club and its associated information
+<Endpoint>GET /clubs/{"{clubID}"} </Endpoint>: Getting a club and its associated information
 
 
 ### Possible Responses
@@ -20,6 +19,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	"Code": 1,
 	"Message": "Club Found",
 	"Data": {
+        "ID": 1,
 		"Name": "Fantastic Club",
 		"Email": "FantasticClub@gmail.com",
 		"Bio": "Fantastic!",
@@ -28,6 +28,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	}
 }
 ```
+**Note**: Club IDs are accessible through `GET /clubs`
 #### Failure
 ```json
 {
