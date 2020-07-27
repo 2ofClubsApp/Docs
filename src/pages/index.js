@@ -47,7 +47,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      description="2ofClubs Landing Page">
+      description="Finding the perfect club for you!">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
