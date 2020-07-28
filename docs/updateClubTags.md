@@ -13,7 +13,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 
 ```json
 {
-    "Tags": []int
+    "Tags": []string
 }
 ```
 
@@ -30,7 +30,7 @@ All previous tags will be replaced with the new updated list of tags <br></br>
 **Note**: Tag IDs are available through [GET /tags](get_tags)
 ```json
 {
-    "Tags": [1, 2, 3, 4]
+    "Tags": ["Arts", "Mathematics", "Physics", "Cooking"]
 }
 ```
 **Note**: Repeated tags will only count once

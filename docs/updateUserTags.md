@@ -9,11 +9,11 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /users/{"{tagID}"}/tags </Endpoint>: Updating a users tags
+<Endpoint>POST /users/{"{tagName}"}/tags </Endpoint>: Updating a users tags
 
 ```json
 {
-    "Tags": []int
+    "Tags": []string
 }
 ```
 
@@ -30,10 +30,10 @@ All previous tags will be replaced with the new updated list of Tag IDs<br></br>
 **Note**: Tag IDs are available through [GET /tags](get_tags)
 ```json
 {
-    "Tags": [1, 2, 3]
+    "Tags": ["Computer Science", "Physics", "Mathematics"]
 }
 ```
-**Note**: Repeated tags will only count once
+**Note**: Repeated tags will only count once  
 
 ### Possible Responses
 #### Immediate Success

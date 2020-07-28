@@ -19,14 +19,8 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	"Message": "Tags Found",
 	"Data": {
 		"Tags": [
-            {
-                "ID": 1,
-                "Name": "Computer Science"
-            },
-            {
-                "ID": 2,
-                "Name": "Mathematics"
-            }            
+            "Computer Science",
+            "Mathematics"     
 		]
 	}
 }

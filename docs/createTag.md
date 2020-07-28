@@ -13,7 +13,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 
 ```json
 {
-    "Tag": string
+    "Name": string
 }
 ```
 
@@ -31,6 +31,8 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4Mjg1MDQsImlhdCI6IjIw
 }
 ```
 ### Possible Responses
+**Note**: Tags that are created would be active by default (`is_active: TRUE`). <br></br>
+See [Toggle](/toggle) to deactivate a tag (`is_active: FALSE`)
 #### Immediate Success
 ```json
 {

@@ -9,7 +9,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /tags/{"{tagID}"}/toggle </Endpoint>: Toggling a tag on/off
+<Endpoint>POST /tags/{"{tagName}"}/toggle </Endpoint>: Toggling a tag on/off
 
 ### Example Request
 This is an **admin protected route**, a **valid admin JWT is required** in the header field

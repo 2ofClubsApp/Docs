@@ -17,20 +17,13 @@ Status Struct
 ## Data
 In the `Data` portion of `Status`, one or more of the following structs will belong to it
 ```json
-Tag Struct
-{
-    "ID": int
-    "Name": string
-}    
-```
-```json
 Manages/Attends Struct
 {
     "ID": int
     "Name": string
     "Email": string
     "Size": int
-    "Tags": []Tag
+    "Tags": []string,
     "IsOwner": bool
 }
 ```
