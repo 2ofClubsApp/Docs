@@ -28,14 +28,27 @@ export const Endpoint = ({children, color}) => ( <span style={{
 ```
 ### Possible Responses
 #### Immediate Success
-```
-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyNzUsImlhdCI6IjIwMjAtMDctMjdUMDA6MjY6MTUuNzg5NTg0Mi0wNDowMCIsInN1YiI6ImNocmlzIn0.5US2_ITKcfgkpEbfsR-gxXbGPFY6XsgJPcGA5qaBD1M
+```json
+{
+	"Code": 1,
+	"Message": "Successfully logged in",
+	"Data": {
+	    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyNzUsImlhdCI6IjIwMjAtMDctMjdUMDA6MjY6MTUuNzg5NTg0Mi0wNDowMCIsInN1YiI6ImNocmlzIn0.5US2_ITKcfgkpEbfsR-gxXbGPFY6XsgJPcGA5qaBD1M"
+    }
+}
 ```
 #### Failure
 ```json
 {
 	"Code": -1,
 	"Message": "Username or Password is Incorrect",
+	"Data": {}
+}
+```
+```json
+{
+	"Code": -1,
+	"Message": "Sorry, your account has not been approved yet",
 	"Data": {}
 }
 ```
