@@ -1,7 +1,7 @@
 ---
-id: delete_manager
-title: Delete Manager
-sidebar_label: Delete Manager
+id: remove_manager
+title: Remove Manager
+sidebar_label: Remove Manager
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{
@@ -9,8 +9,9 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>DELETE /clubs/{"{clubID}"}/manages/{"{userName}"} </Endpoint>: Deleting a club manager
+<Endpoint>DELETE /clubs/{"{clubID}"}/manages/{"{userName}"} </Endpoint>: Removing a club manager
 
+**Note**: Only club owners/managers can remove managers
 
 ### Example Request
 This is a **protected route**, a **valid JWT is required** in the header field

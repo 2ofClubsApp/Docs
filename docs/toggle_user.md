@@ -1,7 +1,7 @@
 ---
 id: toggle_user
-title: Toggle
-sidebar_label: Toggle
+title: Toggle User
+sidebar_label: Toggle User
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{

@@ -24,7 +24,8 @@ export const Endpoint = ({children, color}) => ( <span style={{
 		"Email": "FantasticClub@gmail.com",
 		"Bio": "Fantastic!",
 		"Size": 20,
-		"Tags": []
+		"Tags": [],
+        "Hosts": []
 	}
 }
 ```

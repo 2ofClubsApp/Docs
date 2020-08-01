@@ -1,7 +1,7 @@
 ---
 id: create_tag
-title: Create
-sidebar_label: Create
+title: Create Tag
+sidebar_label: Create Tag
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{

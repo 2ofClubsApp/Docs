@@ -1,7 +1,7 @@
 ---
 id: update_club_tags
-title: Update Tags
-sidebar_label: Update Tags
+title: Update Club Tags
+sidebar_label: Update Club Tags
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{
@@ -9,7 +9,9 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /clubs/{"{clubID}"}/tags </Endpoint>: Updating a club's tags
+<Endpoint>POST /clubs/{"{clubID}"}/tags </Endpoint>: Updating a clubs tags <br></br>
+
+**Note**: Only a club owner or club managers can update club tags
 
 ```json
 {

@@ -1,7 +1,7 @@
 ---
 id: update_user_tags
-title: Update Tags
-sidebar_label: Update Tags
+title: Update User Tags
+sidebar_label: Update User Tags
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{

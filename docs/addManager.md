@@ -9,8 +9,9 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /clubs/{"{clubID}"}/manages/{"{userName}"} </Endpoint>: Adding a club manager
+<Endpoint>POST /clubs/{"{clubID}"}/manages/{"{userName}"} </Endpoint>: Adding a club manager <br></br>
 
+**Note**: Only a club owner can add club managers
 
 ### Example Request
 This is a **protected route**, a **valid JWT is required** in the header field

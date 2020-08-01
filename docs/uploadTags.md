@@ -1,7 +1,7 @@
 ---
 id: upload_tags
-title: Upload
-sidebar_label: Upload
+title: Upload Tags
+sidebar_label: Upload Tags
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{
