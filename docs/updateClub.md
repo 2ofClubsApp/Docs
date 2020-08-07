@@ -1,4 +1,4 @@
----
+--
 id: update_club
 title: Update
 sidebar_label: Update
@@ -11,7 +11,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 
 <Endpoint>POST /clubs </Endpoint>: Updating a club owned by the given user provided by the JWT
 
-**Note**: Only a club owner or club managers can update a club event
+**Note**: Only a club owner or club managers can update a club
 ```json
 {
     "Name": string,
