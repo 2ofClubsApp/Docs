@@ -9,7 +9,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>DELETE /events/{"{eventID}"}/attend </Endpoint>: Unattending a club event
+<Endpoint>POST /events/{"{eventID}"}/unattend </Endpoint>: Unattending a club event
 
 
 ### Example Request
