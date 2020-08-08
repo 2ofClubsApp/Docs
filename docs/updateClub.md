@@ -1,4 +1,4 @@
---
+---
 id: update_club
 title: Update
 sidebar_label: Update
