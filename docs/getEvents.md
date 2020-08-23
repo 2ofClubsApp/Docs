@@ -16,13 +16,32 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "All Events Found",
-	"Data": {
-        "ID": 1,
-		"Name": "Fantastic Event",
-		"Description": "This is a fantastic event!",
-        "Fee": 0
+	"code": 1,
+	"message": "all events found",
+	"data": {
+		"events": [
+			{
+				"id": 1,
+				"name": "Fantastic Event",
+				"description": "A very good event",
+				"location": "In-Person",
+				"fee": 30
+			},
+			{
+				"id": 2,
+				"name": "Another Fantastic Event",
+				"description": "Another very good event",
+				"location": "Online",
+				"fee": 40
+			},
+			{
+				"id": 3,
+				"name": "Cool Event",
+				"description": "A very cool event",
+				"location": "In-Person",
+				"fee": 50
+			}
+		]
 	}
 }
 ```
@@ -36,23 +55,25 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "All Events Found",
-	"Data": {
-        "Hosts": [
-            {
-                "ID": 1,
-        		"Name": "Fantastic Event",
-        		"Description": "This is a fantastic event!",
-                "Fee": 0
-            },
-            {
-                "ID": 2,
-        		"Name": "Another Fantastic Event",
-        		"Description": "This is another fantastic event!",
-                "Fee": 0
-            }
-        ]
+	"code": 1,
+	"message": "all club events found",
+	"data": {
+		"hosts": [
+			{
+				"id": 1,
+				"name": "Fantastic Event",
+				"description": "A very good event",
+				"location": "In-Person",
+				"fee": 30
+			},
+			{
+				"id": 2,
+				"name": "Another Fantastic Event",
+				"description": "Another very good event",
+				"location": "Online",
+				"fee": 40
+			}
+		]
 	}
 }
 ```
@@ -66,26 +87,23 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Event Found",
-	"Data": {
-        "Hosts": [
-            {
-                "ID": 1,
-        		"Name": "Fantastic Event",
-        		"Description": "This is a fantastic event!",
-                "Fee": 0
-            }
-        ]
+	"code": 1,
+	"message": "event found",
+	"data": {
+		"id": 1,
+		"name": "Fantastic Event",
+		"description": "A very good event",
+		"location": "In-Person",
+		"fee": 30
 	}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Event not found",
-	"Data": {}
+	"code": -1,
+	"message": "event not found",
+	"data": {}
 }
 ```
 

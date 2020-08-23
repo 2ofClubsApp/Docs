@@ -9,7 +9,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /users/{"{username}"}/toggle </Endpoint>: Toggle a user Active or Inactive
+<Endpoint>POST /toggle/users/{"{username}"} </Endpoint>: Toggle a user Active or Inactive
 
 
 ### Example Request
@@ -24,18 +24,24 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4Mjg1M
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Updated User",
-	"Data": {}
+	"code": 1,
+	"message": "toggled user",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "User Not Found",
-	"Data": {}
+	"code": -1,
+	"message": "user not found",
+	"data": {}
 }
 ```
-
+```json
+{
+	"code": -1,
+	"message": "please contact an administrator",
+	"data": {}
+}
+```
 

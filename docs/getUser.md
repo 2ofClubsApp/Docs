@@ -23,22 +23,93 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "User Found",
-	"Data": {
-        "Email": "",
-		"Manages": [],
-		"Tags": [],
-        "Attends": []
-	}
+    "code": 1,
+    "message": "user found",
+    "data": {
+        "email": "example@email.com",
+        "manages": [
+            {
+                "id": 1,
+                "name": "Cool Club",
+                "email": "coolClub@email.com",
+                "bio": "Cool Club",
+                "size": 15,
+                "tags": [
+                    {
+                        "id": 4,
+                        "name": "Computer Science",
+                        "isActive": true
+                    },
+                    {
+                        "id": 10,
+                        "name": "Arts",
+                        "isActive": true
+                    }
+                ],
+                "hosts": [
+                    {
+                        "id": 40,
+                        "name": "Annual Barbecue",
+                        "description": "Burgers, Hotdogs and more!",
+                        "location": "The Park",
+                        "fee": 10
+                    }
+                ],
+                "isOwner": true
+            },
+            {
+                "id": 2,
+                "name": "Club2",
+                "email": "club2@email.com",
+                "bio": "Club2!",
+                "size": 20,
+                "tags": [],
+                "hosts": [],
+                "isOwner": false
+            }
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "Mathematics",
+                "isActive": true
+            },
+            {
+                "id": 3,
+                "name": "Physics",
+                "isActive": true
+            },
+            {
+                "id": 10,
+                "name": "Arts",
+                "isActive": true
+            }
+        ],
+        "attends": [
+            {
+                "id": 40,
+                "name": "Annual Barbecue",
+                "description": "Burgers, Hotdogs and more!",
+                "location": "The Park",
+                "fee": 10
+            },
+            {
+                "id": 41,
+                "name": "Cheese Festival",
+                "description": "Cheese Cheese Cheese!",
+                "location": "Cheeseland",
+                "fee": 0
+            }
+        ]
+    }
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
 }
 ```
 ---
@@ -59,26 +130,45 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "User Found",
-	"Data": {
-		"Manages": []
+	"code": 1,
+	"message": "user found",
+	"data": {
+		"manages": [
+			{
+				"id": 4,
+				"name": "Fantastic Club",
+				"email": "FantasticClub@email.com",
+				"bio": "Fantastic!",
+				"size": 20,
+				"tags": [],
+				"hosts": [
+					{
+						"id": 2,
+						"name": "Fantastic Event",
+						"description": "A very good event",
+						"location": "In-Person",
+						"fee": 30
+					}
+				],
+				"isOwner": true
+			}
+		]
 	}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
 }
 ```
 
 ---
 ## Obtain user attended events
 
-<Endpoint>GET /users/{"{username}"}/events </Endpoint>: Obtain all events that a user will attend
+<Endpoint>GET /users/{"{username}"}/attends </Endpoint>: Obtain all events that a user will attend
 
 ### Example Request
 This is a **protected route**, a **valid JWT is required** in the header field
@@ -92,19 +182,27 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "User Found",
-	"Data": {
-		"Attends": []
+	"code": 1,
+	"message": "user found",
+	"data": {
+		"attends": [
+            {
+                "id": 40,
+                "name": "Annual Barbecue",
+                "description": "Burgers, Hotdogs and more!",
+                "location": "The Park",
+                "fee": 10
+            }	
+        ]
 	}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
 }
 ```
 

@@ -9,7 +9,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /tags/{"{tagName}"}/toggle </Endpoint>: Toggling a tag on/off
+<Endpoint>POST /toggle/tags/{"{tagName}"} </Endpoint>: Toggling a tag on/off
 
 ### Example Request
 This is an **admin protected route**, a **valid admin JWT is required** in the header field
@@ -22,31 +22,24 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4Mjg1M
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Tag Updated",
-	"Data": {}
+	"code": 1,
+	"message": "tag toggled",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Tag doesn't exist",
-	"Data": {}
+	"code": -1,
+	"message": "tag doesn't exist",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Error Updating Tag.",
-	"Data": {}
-}
-```
-```json
-{
-	"Code": -1,
-	"Message": "Please contact an administrator.",
-	"Data": {}
+	"code": -1,
+	"message": "please contact an administrator",
+	"data": {}
 }
 ```
 

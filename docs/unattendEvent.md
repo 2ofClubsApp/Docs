@@ -23,17 +23,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Event Found",
-	"Data": {}
+	"code": 1,
+	"message": "event unattended",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Event not found",
-	"Data": {}
+	"code": -1,
+	"message": "event not found",
+	"data": {}
 }
 ```
 

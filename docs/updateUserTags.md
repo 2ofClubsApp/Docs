@@ -39,17 +39,17 @@ All previous tags will be replaced with the new updated list of Tag IDs<br></br>
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Tags Updated",
-	"Data": {}
+	"code": 1,
+	"message": "tags updated",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
 }
 ```
 

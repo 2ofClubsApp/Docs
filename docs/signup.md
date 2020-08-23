@@ -13,9 +13,9 @@ export const Endpoint = ({children, color}) => ( <span style={{
 
 ```json
 {
-    "username": string,
-    "password": string,
-    "email": string
+    "Username": string,
+    "Password": string,
+    "Email": string
 }
 ```
 ### Example Request
@@ -31,7 +31,9 @@ export const Endpoint = ({children, color}) => ( <span style={{
 ---
 **Username** (Required, Unique)
 
-Usernames must start with a letter and can only contain the following characters: a-zA-Z0-9_ and must be 50 characters or less
+Usernames must start with a letter and can only contain the following characters: a-zA-Z0-9_ and must be 50 characters or less <br></br>
+
+**Note**: If the username is valid, it will be lowercased
 
 Min: 2 characters <br></br>
 Max: 15 characters 
@@ -54,29 +56,31 @@ Max: 45 characters (**See note below**)
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Signup Successful",
-	"Data": {}
+	"code": 1,
+	"message": "signup successful",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to Sign Up User",
-	"Data": {
-		"Username": "Username already exists",
-		"Email": "Email already exists"
+	"code": -1,
+	"message": "unable to sign up user",
+	"data": {
+		"username": "username already exists",
+		"email": "email already exists",
+		"password": ""
 	}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to Sign Up User",
-	"Data": {
-		"Username": "Username must start with a letter and can only contain the following characters: a-zA-Z0-9_ and must be 50 characters or less",
-		"Email": "Must be a valid email"
+	"code": -1,
+	"message": "unable to sign up user",
+	"data": {
+		"username": "username must start with a letter and can only contain the following characters: a-zA-Z0-9_ and must be 50 characters or less",
+		"email": "must be a valid email",
+		"password": "a password is required"
 	}
 }
 ```

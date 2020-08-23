@@ -36,24 +36,24 @@ See [Toggle](/toggle) to deactivate a tag (`is_active: FALSE`)
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully created tag",
-	"Data": {}
+	"code": 1,
+	"message": "successfully created tag",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Tag already exists",
-	"Data": {}
+	"code": -1,
+	"message": "tag already exists",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Please contact an administrator.",
-	"Data": {}
+	"code": -1,
+	"message": "please contact an administrator",
+	"data": {}
 }
 ```
 

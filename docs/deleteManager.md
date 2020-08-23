@@ -25,18 +25,31 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully removed manager",
-	"Data": {}
+	"code": 1,
+	"message": "successfully removed manager",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to remove manager",
-	"Data": {}
+	"code": -1,
+	"message": "user not found",
+	"data": {}
 }
 ```
-
+```json
+{
+	"code": -1,
+	"message": "club not found",
+	"data": {}
+}
+```
+```json
+{
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
+}
+```
 

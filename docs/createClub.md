@@ -9,7 +9,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /clubs </Endpoint>: Creating a club owned by the given user provided by the JWT
+<Endpoint>POST /clubs </Endpoint>: Creating a club
 
 ```json
 {
@@ -31,7 +31,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 ```json
 {
     "Name": "Fantastic Club",
-    "Email": "FantasticClub@gmail.com",
+    "Email": "FantasticClub@email.com",
     "Bio": "Fantastic!",
     "Size": 20
 }
@@ -52,7 +52,7 @@ Emails must be valid (i.e. Must include @ and a valid TLD)
 ---
 **Bio** (Required)
 
-Min: 0 characters (**Note**: If 0, the `Bio` field would be left as `"Bio": ""`)<br></br>
+Min: 1 character<br></br>
 Max: 300 characters
 
 ---
@@ -65,17 +65,17 @@ Value: Club size must be greater than 0
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Club successfully created",
-	"Data": {}
+	"code": 1,
+	"message": "club successfully created",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to create the Club",
-	"Data": {}
+	"code": -1,
+	"message": "unable to create club",
+	"data": {}
 }
 ```
 

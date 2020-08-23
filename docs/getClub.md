@@ -1,7 +1,7 @@
 ---
 id: get_club
-title: Get
-sidebar_label: Get
+title: Get Club
+sidebar_label: Get Club
 ---
 
 export const Endpoint = ({children, color}) => ( <span style={{
@@ -16,16 +16,24 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Club Found",
-	"Data": {
-        "ID": 1,
-		"Name": "Fantastic Club",
-		"Email": "FantasticClub@gmail.com",
-		"Bio": "Fantastic!",
-		"Size": 20,
-		"Tags": [],
-        "Hosts": []
+	"code": 1,
+	"message": "club found",
+	"data": {
+		"id": 4,
+		"name": "Fantastic Clubs",
+		"email": "FantasticClubs@gmail.com",
+		"bio": "Fantastis!",
+		"size": 20,
+		"tags": [],
+		"hosts": [
+			{
+				"id": 2,
+				"name": "Fantastic Event",
+				"description": "A very good event",
+				"location": "In-Person",
+				"fee": 30
+			}
+		]
 	}
 }
 ```
@@ -33,9 +41,9 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Club Not Found",
-	"Data": {}
+	"code": -1,
+	"message": "club not found",
+	"data": {}
 }
 ```
 

@@ -9,12 +9,12 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /login</Endpoint>: Login to the app provided the correct user credentials
+<Endpoint>POST /login</Endpoint>: Login to the app provided the correct user credentials <br></br>
 
 ```json
 {
-    "username": string,
-    "password": string,
+    "Username": string,
+    "Password": string,
 }
 ```
 
@@ -30,26 +30,29 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully logged in",
-	"Data": {
-	    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyNzUsImlhdCI6IjIwMjAtMDctMjdUMDA6MjY6MTUuNzg5NTg0Mi0wNDowMCIsInN1YiI6ImNocmlzIn0.5US2_ITKcfgkpEbfsR-gxXbGPFY6XsgJPcGA5qaBD1M"
-    }
+	"code": 1,
+	"message": "successfully logged in",
+	"data": {
+	    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyNzUsImlhdCI6IjIwMjAtMDctMjdUMDA6MjY6MTUuNzg5NTg0Mi0wNDowMCIsInN1YiI6ImNocmlzIn0.5US2_ITKcfgkpEbfsR-gxXbGPFY6XsgJPcGA5qaBD1M"
+	}
 }
 ```
+**Note**: If you log in again (while you're already logged in), any previous **access & refresh tokens** will be revoked. <br></br>
+
+**Note**: The access token will be returned in `data.token`. The refresh token will be returned as an HTTPOnly, Secure, SameSite Cookie.
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Username or Password is Incorrect",
-	"Data": {}
+	"code": -1,
+	"message": "username or password is incorrect",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Sorry, your account has not been approved yet",
-	"Data": {}
+	"code": -1,
+	"message": "sorry, your account has not been approved yet",
+	"data": {}
 }
 ```
 

@@ -8,9 +8,9 @@ Upon a CRUD success, the operation response will be returned in the following st
 ```json
 Status Struct
 {
-    "Code": int
-    "Message": string
-    "Data": {}
+    "code": int
+    "message": string
+    "data": {}
 } 
 ```
 
@@ -19,12 +19,13 @@ In the `Data` portion of `Status`, one or more of the following structs will bel
 ```json
 Manages/Attends Struct
 {
-    "ID": int
-    "Name": string
-    "Email": string
-    "Size": int
-    "Tags": []string,
-    "IsOwner": bool
+    "id": int
+    "name": string
+    "email": string
+    "size": int
+    "tags": []string,
+    "hosts": []Event,
+    "isOwner": bool
 }
 ```
 ---

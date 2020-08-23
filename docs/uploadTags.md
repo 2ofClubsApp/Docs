@@ -42,17 +42,17 @@ where each tag is separated by a newline. Tags with spaces at the front or at th
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully created tags",
-	"Data": {}
+	"code": 1,
+	"message": "successfully created tags",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Please contact an administrator.",
-	"Data": {}
+	"code": -1,
+	"message": "please contact an administrator",
+	"data": {}
 }
 ```
 

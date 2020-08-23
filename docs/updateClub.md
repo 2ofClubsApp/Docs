@@ -9,13 +9,11 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>POST /clubs </Endpoint>: Updating a club owned by the given user provided by the JWT
+<Endpoint>POST /clubs/{"{clubID}"} </Endpoint>: Updating a club
 
 **Note**: Only a club owner or club managers can update a club
 ```json
 {
-    "Name": string,
-    "Email": string,
     "Bio": string,
     "Size": int
 }
@@ -31,8 +29,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Body
 ```json
 {
-    "Name": "Fantastic Club",
-    "Email": "FantasticClub@gmail.com",
     "Bio": "Updated Club biography!",
     "Size": 20
 }
@@ -40,20 +36,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 
 ### Parameters
 ---
-**Name** (Required, Unique)
 
-Min: 3 characters <br></br>
-Max: 50 characters
-
----
-**Email** (Required, Unique)
-
-Emails must be valid (i.e. Must include @ and a valid TLD)
-
----
 **Bio** (Required)
 
-Min: 0 characters (**Note**: If 0, the `Bio` field would be left as `"Bio": ""`)<br></br>
+Min: 1 character <br></br>
 Max: 300 characters
 
 ---
@@ -66,31 +52,31 @@ Value: Club size must be greater than 0
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully updated club=",
-	"Data": {}
+	"code": 1,
+	"message": "successfully updated club",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to update club",
-	"Data": {}
+	"code": -1,
+	"message": "unable to update club",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Club not found",
-	"Data": {}
+	"code": -1,
+	"message": "club not found",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
 }
 ```
 

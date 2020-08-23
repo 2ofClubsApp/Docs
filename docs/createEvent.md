@@ -18,7 +18,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
     "Name": string,
     "Description": string,
     "Location": string,
-    "Fee": number
+    "Fee": float
 }
 ```
 
@@ -70,28 +70,29 @@ Value: The event fee must be greater or equal to 0
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully created event",
-	"Data": {}
+	"code": 1,
+	"message": "successfully created event",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Club Not Found",
-	"Data": {}
+	"code": -1,
+	"message": "club not found",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to create event",
-	"Data": {
-		"Name": "Event name must be at least 1 character and a maximum of 50 characters",
-		"Description": "Event description must be a maximum of 300 characters or less",
-		"Location": "Event location must be a maximum of 100 characters or less",
-		"Fee": "Fee must be greater or equal to $0"
+	"code": -1,
+	"message": "unable to create event",
+	"data": {
+		"admin": "you must be a manager or owner of the club",
+		"name": "event name must be at least 1 character and a maximum of 50 characters",
+		"description": "event description must be a maximum of 300 characters or less",
+		"location": "event location must be a maximum of 100 characters or less",
+		"fee": "fee must be greater or equal to 0"
 	}
 }
 ```

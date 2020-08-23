@@ -24,38 +24,38 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Event Deleted",
-	"Data": {}
+	"code": 1,
+	"message": "event deleted",
+	"data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "User Not Found",
-	"Data": {}
+	"code": -1,
+	"message": "user not found",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Club Not Found",
-	"Data": {}
+	"code": -1,
+	"message": "club not found",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Event Not Found",
-	"Data": {}
+	"code": -1,
+	"message": "event not found",
+	"data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+	"code": -1,
+	"message": "Forbidden",
+	"data": {}
 }
 ```
 

@@ -15,14 +15,25 @@ export const Endpoint = ({children, color}) => ( <span style={{
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Tags Found",
-	"Data": {
-		"Tags": [
-            "Computer Science",
-            "Mathematics"     
-		]
-	}
+	"code": 1,
+	"message": "tags found",
+	"data": [
+		{
+			"id": 1,
+			"name": "Computer Sciences",
+			"isActive": true
+		},
+		{
+			"id": 2,
+			"name": "Mathematics",
+			"isActive": false
+		},
+		{
+			"id": 3,
+			"name": "Chemistry",
+			"isActive": false
+		}
+	]
 }
 ```
 
