@@ -22,12 +22,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTgzMDI1M
 #### Immediate Success
 ```json
 {
-	"code": 1,
-	"message": "generated new token pair",
-	"data": {}
+    "code": 1,
+    "message": "generated new token pair",
+    "data": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTgyMjMzNjMsImlhdCI6IjIwMjAtMDgtMjNUMjI6NTE6MDMuMzk5NjU3MloiLCJzdWIiOiJoaWltY2hyaXNsaW0ifQ.2SnEuCF28RUCXZ_q0L1MYNwm-xI6Xy5AZA5bSgrb_ss"
+    }
 }
 ```
 **Note**: Once a new pair of access and refresh tokens are generated, all previous tokens (access and refresh) will be revoked
+
+**Note**: The new access token will be returned in `data.token`. The new refresh token will be returned as an HTTPOnly, Secure, SameSite Cookie.
+
 #### Failure
 ```json
 {
