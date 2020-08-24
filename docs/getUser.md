@@ -140,6 +140,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 				"email": "FantasticClub@email.com",
 				"bio": "Fantastic!",
 				"size": 20,
+                "logo": "/photos/club/4",
 				"tags": [],
 				"hosts": [
 					{

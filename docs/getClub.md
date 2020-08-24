@@ -20,10 +20,11 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	"message": "club found",
 	"data": {
 		"id": 4,
-		"name": "Fantastic Clubs",
-		"email": "FantasticClubs@gmail.com",
-		"bio": "Fantastis!",
+		"name": "Fantastic Club",
+		"email": "FantasticClub@email.com",
+		"bio": "Fantastic!",
 		"size": 20,
+        "logo": "/photos/club/4",
 		"tags": [],
 		"hosts": [
 			{

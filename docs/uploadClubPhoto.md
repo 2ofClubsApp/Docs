@@ -37,6 +37,12 @@ The file must be **max** 10 MB
 }
 ```
 **Note**: For any existing club photos, they will be overridden with the new photo (assuming the photo adheres to the file size restrictions)
+
+**Note**: For any first time photo uploads, the logo resource link will be added to the Club struct under `logo`.
+
+(e.g. When you upload a photo to Club1 and perform a GET, the `logo` field will be populated with the resource link to the club image)
+
+**Note**: The `logo` resource link will be in the format of <Endpoint>/photos/clubs/{clubID}</Endpoint>
 #### Failure
 ```json
 {
