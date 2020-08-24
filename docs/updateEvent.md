@@ -61,47 +61,63 @@ Min: 0 characters <br></br>
 Max: 300 characters
 
 ---
-**Fee** (Required)
+**Fee** (Optional)
 
 Value: The event fee must be greater or equal to 0 
+
+**Note**: If the fee value isn't provided, then the event fee will be set to `0`
 
 ---
 ### Possible Responses
 #### Immediate Success
 ```json
 {
-	"Code": 1,
-	"Message": "Successfully updated event",
-	"Data": {}
+    "code": 1,
+    "message": "successfully updated event",
+    "data": {}
 }
 ```
 #### Failure
 ```json
 {
-	"Code": -1,
-	"Message": "Unable to update event",
-	"Data": {}
+    "code": -1,
+    "message": "unable to update event",
+    "data": {
+        "admin": "you must be a manager or owner of the club",
+        "name": "event name must be at least 1 character and a maximum of 50 characters",
+        "description": "event description must be a maximum of 300 characters or less",
+        "location": "event location must be a maximum of 100 characters or less",
+        "fee": "fee must be greater or equal to 0"
+    }
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Event not found",
-	"Data": {}
+    "code": -1,
+    "message": "event not found",
+    "data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Club not found",
-	"Data": {}
+    "code": -1,
+    "message": "club not found",
+    "data": {}
 }
 ```
 ```json
 {
-	"Code": -1,
-	"Message": "Forbidden",
-	"Data": {}
+    "code": -1,
+    "message": "user not found",
+    "data": {}
 }
 ```
+```json
+{
+    "code": -1,
+    "message": "Forbidden",
+    "data": {}
+}
+```
+
 

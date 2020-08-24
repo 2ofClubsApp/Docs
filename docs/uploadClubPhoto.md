@@ -61,6 +61,13 @@ The file must be **max** 10 MB
 ```json
 {
 	"code": -1,
+	"message": "invalid file: A photo of 10 MB or less is required",
+	"data": {}
+}
+```
+```json
+{
+	"code": -1,
 	"message": "Forbidden",
 	"data": {}
 }
