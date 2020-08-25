@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://2ofClubs.app><img src="https://api.netlify.com/api/v1/badges/96222078-9b07-4beb-86fa-a982c73ba4cf/deploy-status" alt="Documentation Website"></a>
+  <a href="https://2ofClubs.app"><img src="https://api.netlify.com/api/v1/badges/96222078-9b07-4beb-86fa-a982c73ba4cf/deploy-status" alt="Documentation Website"></a>
   <a href="https://godoc.org/github.com/2ofClubsApp/2ofClubs-Server"><img src="https://pkg.go.dev/badge/github.com/2ofClubsApp/2ofclubs-server?status.svg" alt="Go Doc"/></a>
   <a href="#License" alt="License"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
 </p>
