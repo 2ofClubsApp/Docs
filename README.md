@@ -8,7 +8,6 @@
 
 <p align="center">
   <a href="https://2ofClubs.app"><img src="https://api.netlify.com/api/v1/badges/96222078-9b07-4beb-86fa-a982c73ba4cf/deploy-status" alt="Documentation Website"></a>
-  <a href="#License" alt="License"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
 </p>
 
 <p align="center">
