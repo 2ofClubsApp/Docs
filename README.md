@@ -1,7 +1,5 @@
-# 2ofClubs Docs
-
 <h1 align="center">
-  <p align="center">2ofClubs Server</p>
+  <p align="center">2ofClubs Documentation</p>
   <h4 align="center">Finding the perfect club for you!</h4>
   <a href="https://2ofClubs.app><img src="https://avatars3.githubusercontent.com/u/64863952?s=400&u=293c427becbc89d1388ece6182462f14ad81d3a5&v=4" alt="2ofClubs"></a>
 </h1>
