@@ -9,8 +9,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
       color: '#E83E8C',
     }}>{children}</span> );
 
-<Endpoint>GET /events </Endpoint>: Obtain all events
-
+<Endpoint>GET /events </Endpoint>: Obtain all events <br></br>
 
 ### Possible Responses
 #### Immediate Success
@@ -24,6 +23,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 				"id": 1,
 				"name": "Fantastic Event",
 				"description": "A very good event",
+                "datetime": "2020-08-24T04:10:30-04:00",
 				"location": "In-Person",
 				"fee": 30
 			},
@@ -31,6 +31,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 				"id": 2,
 				"name": "Another Fantastic Event",
 				"description": "Another very good event",
+                "datetime": "2020-09-24T04:10:30-04:00",
 				"location": "Online",
 				"fee": 40
 			},
@@ -38,6 +39,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 				"id": 3,
 				"name": "Cool Event",
 				"description": "A very cool event",
+                "datetime": "2020-10-24T04:10:30-04:00",
 				"location": "In-Person",
 				"fee": 50
 			}
@@ -45,6 +47,8 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	}
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
+
 ---
 
 ## Obtain all club hosted events
@@ -63,6 +67,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 				"id": 1,
 				"name": "Fantastic Event",
 				"description": "A very good event",
+                "datetime": "2020-08-24T04:10:30-04:00",
 				"location": "In-Person",
 				"fee": 30
 			},
@@ -70,6 +75,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 				"id": 2,
 				"name": "Another Fantastic Event",
 				"description": "Another very good event",
+                "datetime": "2020-09-24T04:10:30-04:00",
 				"location": "Online",
 				"fee": 40
 			}
@@ -77,6 +83,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	}
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
 
 ---
 ## Obtain a specific event
@@ -93,11 +100,14 @@ export const Endpoint = ({children, color}) => ( <span style={{
 		"id": 1,
 		"name": "Fantastic Event",
 		"description": "A very good event",
+        "datetime": "2020-08-24T04:10:30-04:00",
 		"location": "In-Person",
 		"fee": 30
 	}
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
+
 #### Failure
 ```json
 {

@@ -17,6 +17,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 { 
     "Name": string,
     "Description": string,
+    "DateTime": DateTime,
     "Location": string,
     "Fee": number
 }
@@ -34,6 +35,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 { 
     "Name": "Fantastic Event",
     "Description": "Updated Event Description",
+    "DateTime": "2020-09-30T010:40:20+00:00",
     "Location": "In-Person",
     "Fee": 30
 }
@@ -52,6 +54,11 @@ Max: 50 characters
 Min: 0 characters <br></br>
 (**Note**: If no description is specified, then the `Description` field would be left as `"Description": ""`)<br></br>
 Max: 300 characters
+
+---
+**DateTime** (Required)
+
+**Note**: DateTime must be in the RFC3339 format. (i.e. YYYY-MM-DDTHH-MM-SS+00:00) 
 
 ---
 **Location** (Required)
@@ -86,6 +93,7 @@ Value: The event fee must be greater or equal to 0
         "admin": "you must be a manager or owner of the club",
         "name": "event name must be at least 1 character and a maximum of 50 characters",
         "description": "event description must be a maximum of 300 characters or less",
+        "datetime": "datetime must be in the RFC3339 format and the event must occur later than the current time",
         "location": "event location must be a maximum of 100 characters or less",
         "fee": "fee must be greater or equal to 0"
     }

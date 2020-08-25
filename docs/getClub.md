@@ -31,6 +31,7 @@ export const Endpoint = ({children, color}) => ( <span style={{
 				"id": 2,
 				"name": "Fantastic Event",
 				"description": "A very good event",
+                "datetime": "2020-08-24T04:10:30-04:00",
 				"location": "In-Person",
 				"fee": 30
 			}
@@ -38,7 +39,11 @@ export const Endpoint = ({children, color}) => ( <span style={{
 	}
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
+
 **Note**: Club IDs are accessible through `GET /clubs`
+
+
 #### Failure
 ```json
 {

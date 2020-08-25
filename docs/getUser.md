@@ -51,6 +51,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                         "id": 40,
                         "name": "Annual Barbecue",
                         "description": "Burgers, Hotdogs and more!",
+                        "datetime": "2020-10-25T04:10:30-04:00",
                         "location": "The Park",
                         "fee": 10
                     }
@@ -90,6 +91,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "id": 40,
                 "name": "Annual Barbecue",
                 "description": "Burgers, Hotdogs and more!",
+                "datetime": "2020-10-25T04:10:30-04:00",
                 "location": "The Park",
                 "fee": 10
             },
@@ -97,6 +99,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "id": 41,
                 "name": "Cheese Festival",
                 "description": "Cheese Cheese Cheese!",
+                "datetime": "2020-11-30T04:10:30-04:00",
                 "location": "Cheeseland",
                 "fee": 0
             }
@@ -104,6 +107,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
     }
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
+
 #### Failure
 ```json
 {
@@ -147,6 +152,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 						"id": 2,
 						"name": "Fantastic Event",
 						"description": "A very good event",
+                        "datetime": "2020-08-24T04:10:30-04:00",
 						"location": "In-Person",
 						"fee": 30
 					}
@@ -157,6 +163,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 	}
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
+
 #### Failure
 ```json
 {
@@ -191,6 +199,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "id": 40,
                 "name": "Annual Barbecue",
                 "description": "Burgers, Hotdogs and more!",
+                "datetime": "2020-10-25T04:10:30-04:00",
                 "location": "The Park",
                 "fee": 10
             }	
@@ -198,6 +207,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
 	}
 }
 ```
+**Note**: DateTimes are returned in the RFC3339 format in UTC (with the EST time difference).
+
 #### Failure
 ```json
 {
