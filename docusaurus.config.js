@@ -4,8 +4,8 @@ module.exports = {
   url: 'https://2ofclubs.netlify.app/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: '2-of-clubs', // Usually your GitHub org/user name.
-  projectName: '2ofClubs/docs', // Usually your repo name.
+  organizationName: '2ofClubsApp', // Usually your GitHub org/user name.
+  projectName: '2ofClubsApp/docs', // Usually your repo name.
   themeConfig: {
     announcementBar: {
       id: 'beta_test', // Any value that will identify this message.
@@ -57,7 +57,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/2-of-clubs',
+              href: 'https://github.com/2ofClubsApp',
             },
           ],
         },
