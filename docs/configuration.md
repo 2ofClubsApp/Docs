@@ -4,7 +4,8 @@ title: Configuration
 sidebar_label: Configuration
 ---
 
-## Configuration
+The following is a list of the environment variables, their uses and their default values
+
 ### app.env
 | Env Name             | About                                      | Default value(s)                                                                        | Note                                                              |
 |----------------------|--------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------------------------------------|
