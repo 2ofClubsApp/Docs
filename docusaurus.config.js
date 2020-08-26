@@ -30,7 +30,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/2-of-clubs',
+          href: 'https://github.com/2ofClubsApp',
           label: 'GitHub',
           position: 'right',
         },
