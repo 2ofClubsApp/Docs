@@ -60,7 +60,7 @@ Max: 300 characters
 
 **Note**: DateTime must be in the RFC3339 format. (i.e. YYYY-MM-DDTHH-MM-SS+00:00) 
 
----
+--- 
 **Location** (Required)
 
 Min: 0 characters <br></br>

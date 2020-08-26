@@ -14,22 +14,18 @@ Status Struct
 } 
 ```
 
+## Code
+
+Status codes are either `1` or `-1` representing an API call `success` or a `failure` respectively.
+
 ## Data
-In the `Data` portion of `Status`, one or more of the following structs will belong to it
-```json
-Manages/Attends Struct
-{
-    "id": int
-    "name": string
-    "email": string
-    "size": int
-    "tags": []string,
-    "hosts": []Event,
-    "isOwner": bool
-}
-```
+
+Depending on the request, various forms of the data can be returned. <br></br>
+
+You can find the structure and format of the return type (if applicable) for the available server requests throughout the documentation.
+
 ---
 :::note
-Since 2ofClubs is under active development, this page is subject to change.
+2ofClubs is under active development. This page is subject to change.
 :::
 

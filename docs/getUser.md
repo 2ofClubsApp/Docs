@@ -34,6 +34,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "email": "coolClub@email.com",
                 "bio": "Cool Club",
                 "size": 15,
+                "logo": "/photos/club/1",
                 "tags": [
                     {
                         "id": 4,
@@ -64,6 +65,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "email": "club2@email.com",
                 "bio": "Club2!",
                 "size": 20,
+                "logo": "/photos/club/2",
                 "tags": [],
                 "hosts": [],
                 "isOwner": false
@@ -81,8 +83,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "isActive": true
             },
             {
-                "id": 10,
-                "name": "Arts",
+                "id": 11,
+                "name": "Robotics",
                 "isActive": true
             }
         ],
@@ -102,6 +104,24 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1OTU4MjQyN
                 "datetime": "2020-11-30T04:10:30-04:00",
                 "location": "Cheeseland",
                 "fee": 0
+            }
+        ],
+        "swiped": [
+            {
+                "id": 579,
+                "name": "Robotics Club",
+                "email": "robotics@email.com",
+                "bio": "Robots!",
+                "size": 15,
+                "logo": "/photos/club/579",
+                "tags": [
+                    {
+                        "id": 11,
+                        "name": "Robotics",
+                        "isActive": true
+                    }
+                ],
+                "hosts": []
             }
         ]
     }
