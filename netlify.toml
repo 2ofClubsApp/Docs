@@ -6,6 +6,6 @@ force = false
 
 [[redirects]]
 from = "/frontend"
-to = "https://github.com/2ofClubsApp/2ofClubs-server"
+to = "https://github.com/2ofClubsApp/2ofClubs-frontend"
 status = 301
 force = false
