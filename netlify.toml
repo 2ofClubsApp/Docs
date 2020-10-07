@@ -1,11 +1,11 @@
 [[redirects]]
 from = "/server"
-to = "https://github.com/2ofClubsApp/2ofClubs-server.git"
+to = "https://github.com/2ofClubsApp/2ofClubs-server"
 status = 200
 force = false
 
 [[redirects]]
 from = "/frontend"
 to = "https://github.com/2ofClubsApp/2ofClubs-frontend"
-status = 301
+status = 200
 force = false
